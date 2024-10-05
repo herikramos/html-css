@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
   <head>
     <h1>Testando Media Queries</h1>
-    <menu>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+      menu
+      </span>
+    <menu id="itens">
       <ul>
         <li><a href="#">Opção 1</a></li>
         <li><a href="#">Opção 2</a></li>
@@ -29,5 +33,14 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quod delectus adipisci quasi quidem corrupti soluta illum eos temporibus porro, iure neque sint cupiditate maxime officiis! Enim atque minus omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a hic aliquid nesciunt voluptas eum natus optio, quasi maiores, iste porro aspernatur. Labore incidunt illo laborum odit, atque voluptate culpa?</p>
     </article>
   </main>
+  <script>
+    function clickMenu() {
+       if (itens.style.display == 'block') {
+          itens.style.display = 'none'
+       } else {
+        itens.style.display = 'block'
+       }
+    }
+  </script>
 </body>
 </html>
