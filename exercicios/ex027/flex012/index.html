@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    /*flex = flex-grow + flex-shrink + flex-basis
+    /*pai*/
+    div.container {
+      background-color: lightpink;
+      display: flex;
+      flex-flow: row nowrap;
+
+      /*flex-direction: row;*/
+      /*flex-direction: row-reverse;*/
+      /*flex-direction: column;*/
+      /*flex-direction: column-reverse;*/
+
+      /*flex-wrap: nowrap;*/
+      /*flex-wrap: wrap;*/
+      /*flex-wrap: wrap-reverse;*/
+
+      
+      /*main-axis*/
+      /*justify-content: space-around;*/
+      /*justify-content: space-between;*/
+      /*justify-content: space-evenly;*/
+
+      /*cross-axis*/
+      /*align-items: center;*/
+      /*align-items: flex-start;*/
+      /*align-items: flex-end;*/
+
+      /*elementos inpacotados*/
+      /*align-content: flex-start;*/
+      /*align-content: center;*/
+      /*align-content: stretch;*/
+      /*align-content: space-between;*/
+      /*align-content: space-evenly;*/
+      /*align-content: space-around;*/
+    }
+    /*filhos*/
+    div.item {
+      background-color: lightblue;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: 200px;
+      /*Tamanho maximo do item*/
+      /*flex-basis: auto;*/
+     /* flex-shrink: 1;*/
+      /*flex-grow: 1;*/
+    }
+    /*alinhar itens*/
+    /*div#i1 {
+      align-self: stretch;
+    }
+    div#i3 {
+      align-self: flex-end;
+    }
+    div#i5 {
+      align-self: center;
+    }
+    div#i6 {
+      align-self: stretch;
+    }
+    div#i8 {
+      align-self: auto;
+    }
+    div#i10 {
+      align-self: center;
+    }*/
+
+    div#cxA {
+      /*flex-shrink: 0;
+      flex-grow: 1;
+      flex-basis: 200px;*/
+      flex: 0 1 200px;
+    }
+    div#cxB {
+      /*flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 150px;*/
+      flex: 1 1 150px;
+    }
+    div#cxC {
+      /*flex-shrink: 8;
+      flex-grow: 1;
+      flex-basis: auto;*/
+      flex: 1 8 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item" id="cxA">A</div>
+    <div class="item" id="cxB">B</div>
+    <div class="item" id="cxC">C</div>
+  </div>
+</body>
+</html>
