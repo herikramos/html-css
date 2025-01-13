@@ -8,7 +8,6 @@
     /*pai*/
     div.container {
       background-color: lightpink;
-      height: 400px;
       display: flex;
 
       /*flex-direction: row;*/
@@ -20,7 +19,7 @@
       /*flex-wrap: wrap;*/
       /*flex-wrap: wrap-reverse;*/
 
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
       
       /*main-axis*/
       /*justify-content: space-around;*/
@@ -29,7 +28,7 @@
 
       /*cross-axis*/
       /*align-items: center;*/
-      align-items: flex-start;
+      /*align-items: flex-start;*/
       /*align-items: flex-end;*/
 
       /*elementos inpacotados*/
@@ -45,9 +44,10 @@
       background-color: lightblue;
       border: 1px solid black;
       text-align: center;
-      padding: 20px; 
+      /*Tamanho maximo do item*/
+      /*flex-basis: auto;*/
+      flex-basis: 150px;
     }
-
     /*alinhar itens*/
     /*div#i1 {
       align-self: stretch;
@@ -72,13 +72,13 @@
 <body>
   <div class="container">
     <div class="item" id="i1">A</div>
-    <div class="item" id="i2">B</div>
+    <div class="item" id="i2">Outro conteudo</div>
     <div class="item" id="i3">C</div>
     <div class="item" id="i4">D</div>
-    <div class="item" id="i5">E</div>
+    <div class="item" id="i5">Conteudo maior ainda</div>
     <div class="item" id="i6">F</div>
     <div class="item" id="i7">G</div>
-    <div class="item" id="i8">H</div>
+    <div class="item" id="i8">Conteudo ainda maior que ira ocupar mais espaço</div>
     <div class="item" id="i9">I</div>
     <div class="item" id="i10">J</div>
   </div>
